@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shirley Melo - Advogada</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --golden-text: #B8860B;
+            --dark-text: #4A4A4A;
+            --background-white: #FFFFFF;
+            --light-beige: #F5F5DC;
+            --soft-beige: #F0EAD6;
+            --whatsapp-green: #25D366;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: var(--background-white);
+            color: var(--dark-text);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        header {
+            background-color: var(--light-beige);
+            color: var(--golden-text);
+            padding: 0.1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            color: var(--golden-text);
+        }
+
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        nav a {
+            color: var(--dark-text);
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--golden-text);
+        }
+
+        .hero {
+            background-color: var(--soft-beige);
+            color: var(--dark-text);
+            padding-top: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-content {
+            display: flex;
+            align-items: center;
+            max-width: 1200px;
+            padding: 3rem;
+        }
+
+        .hero-image {
+            margin-right: 2rem;
+        }
+
+        .hero-image img {
+            max-width: 300px;
+            border-radius: 50%;
+            border: 4px solid var(--light-beige);
+        }
+
+        .hero-description h1 {
+            font-size: 3rem;
+            color: var(--golden-text);
+            margin-bottom: 1rem;
+        }
+
+        .hero-description p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: var(--dark-text);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--whatsapp-green);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button i {
+            margin-right: 10px;
+        }
+
+        .cta-button:hover {
+            background-color: #128C7E;
+            color: white;
+        }
+
+        .areas-atuacao {
+            background-color: var(--background-white);
+            color: var(--dark-text);
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 2rem;
+        }
+
+        .area-card {
+            background-color: var(--light-beige);
+            color: var(--dark-text);
+            padding: 2rem;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .area-card:hover {
+            transform: scale(1.05);
+            background-color: var(--soft-beige);
+        }
+
+        .area-card i {
+            color: var(--golden-text);
+            margin-bottom: 15px;
+            font-size: 2rem;
+        }
+
+        .localizacao {
+            background-color: var(--soft-beige);
+            color: var(--dark-text);
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .mapa-container {
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .mapa-container iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .endereco {
+            margin-top: 20px;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            background-color: var(--light-beige);
+            color: var(--dark-text);
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        footer .social-icons a {
+            color: var(--golden-text);
+            margin: 0 10px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+
+            .hero-content {
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            .hero-image img {
+                max-width: 200px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .mapa-container iframe {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="logo.png" alt="Shirley Melo Logo">
+                <h2>Shirley Melo</h2>
+            </div>
+            <nav>
+                <a href="#home">Início</a>
+                <a href="#areas">Áreas</a>
+                <a href="#localizacao">Localização</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="shirley-melo.png" alt="Shirley Melo">
+            </div>
+            <div class="hero-description">
+                <h1>Shirley Melo - OAB/GO 46.479 </h1>
+                <p>Advogada especializada em Rio Verde, com mais de 10 anos de experiência. Compromissada em garantir seus direitos com expertise e dedicação.</p>
+                <a href="https://wa.me/5564996185838" target="_blank" class="cta-button">
+                    <i class="fab fa-whatsapp"></i>Consulte Agora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="areas" class="areas-atuacao">
+        <div class="container">
+            <h2 style="color: var(--golden-text);">Áreas de Atuação</h2>
+            <div class="areas-grid">
+                <div class="area-card">
+                    <i class="fas fa-gavel"></i>
+                    <h3>Direito Civil</h3>
+                    <p>Soluções personalizadas em questões civis.</p>
+                </div>
+                <div class="area-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Direito Empresarial</h3>
+                    <p>Suporte jurídico para empresas e empreendedores.</p>
+                </div>
+                <div class="area-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Direito Imobiliário</h3>
+                    <p>Assessoria em transações e conflitos imobiliários.</p>
+                </div>
+                <div class="area-card">
+                    <i class="fas fa-user-tie"></i>
+                    <h3>Direito do Trabalho</h3>
+                    <p>Defesa dos direitos trabalhistas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="localizacao" class="localizacao">
+        <div class="container">
+            <h2 style="color: var(--golden-text);">Nossa Localização</h2>
+            <div class="mapa-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.514083338665!2d-50.56029!3d-17.47523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDQ3JzUyLjAiUyA1MMKwNTYnMDAuMCJX!5e0!3m2!1spt-BR!2sbr!4v1700419568546!5m2!1spt-BR!2sbr" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>            
+            <div class="endereco">
+                <p>Rua Rio Verde, Centro - Rio Verde, Goiás</p>
+                <p>Telefone: (64) 9 9618-5838</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Shirley Melo Advocacia - Todos os direitos reservados</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
