@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR">         
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shirley Melo - Advogada</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" />
     <style>
         :root {
-            --golden-text: #B8860B;
-            --dark-text: #4A4A4A;
-            --background-white: #FFFFFF;
-            --light-beige: #F5F5DC;
-            --soft-beige: #F0EAD6;
+            --golden-text: #8C6412;
+            --dark-text: #f1f1f1;
+            --background-white: #000000;
+            --light-beige: #8C6412;
+            --soft-beige: #000000;
             --whatsapp-green: #25D366;
         }
 
@@ -27,6 +28,11 @@
             color: var(--dark-text);
             line-height: 1.6;
         }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
 
         .container {
             width: 90%;
@@ -59,8 +65,8 @@
         }
 
         .logo img {
-            height: 50px;
-            margin-right: 10px;
+            height: 60px;
+            margin-right: 60px;
         }
 
         nav a {
@@ -96,7 +102,7 @@
 
         .hero-image img {
             max-width: 300px;
-            border-radius: 50%;
+            border-radius: 1%;
             border: 4px solid var(--light-beige);
         }
 
@@ -133,7 +139,7 @@
         }
 
         .areas-atuacao {
-            background-color: var(--background-white);
+            background-color: var(--soft-beige);
             color: var(--dark-text);
             padding: 4rem 0;
             text-align: center;
@@ -147,7 +153,7 @@
         }
 
         .area-card {
-            background-color: var(--light-beige);
+            background-color: var(--background-white);
             color: var(--dark-text);
             padding: 2rem;
             border-radius: 10px;
@@ -244,52 +250,141 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <div class="hero-image">
-                <img src="shirley-melo.png" alt="Shirley Melo">
+                <img src="logo.png" alt="Shirley Melo">
             </div>
             <div class="hero-description">
                 <h1>Shirley Melo - OAB/GO 46.479 </h1>
                 <p>Advogada especializada em Rio Verde, com mais de 10 anos de experiência. Compromissada em garantir seus direitos com expertise e dedicação.</p>
-                <a href="https://wa.me/5564996185838" target="_blank" class="cta-button">
+                <!-- Botão atualizado para rolar até a seção de cadastro -->
+                <a href="#cadastro" class="cta-button">
                     <i class="fab fa-whatsapp"></i>Consulte Agora
                 </a>
             </div>
         </div>
     </section>
+    
 
     <section id="areas" class="areas-atuacao">
         <div class="container">
-            <h2 style="color: var(--golden-text);">Áreas de Atuação</h2>
+            <h2 style="color: var(--golden-text);">Serviços Trabalhistas para Empregados</h2>
+            <p style="text-align: center;">Serviços especializados para empregados na defesa de seus direitos trabalhistas.</p>
             <div class="areas-grid">
                 <div class="area-card">
                     <i class="fas fa-gavel"></i>
-                    <h3>Direito Civil</h3>
-                    <p>Soluções personalizadas em questões civis.</p>
+                    <h3>Ações Judiciais</h3>
+                    <p>Representação em processos trabalhistas para garantir os direitos dos empregados.</p>
                 </div>
                 <div class="area-card">
                     <i class="fas fa-briefcase"></i>
-                    <h3>Direito Empresarial</h3>
-                    <p>Suporte jurídico para empresas e empreendedores.</p>
+                    <h3>Demissões</h3>
+                    <p>Orientação exclusiva para empregados sobre rescisões contratuais, cálculos de verbas e direitos.</p>
                 </div>
                 <div class="area-card">
-                    <i class="fas fa-home"></i>
-                    <h3>Direito Imobiliário</h3>
-                    <p>Assessoria em transações e conflitos imobiliários.</p>
+                    <i class="fas fa-ambulance"></i>
+                    <h3>Acidentes de Trabalho</h3>
+                    <p>Defesa de empregados em casos de acidentes e doenças ocupacionais, garantindo reparação e indenização.</p>
                 </div>
                 <div class="area-card">
-                    <i class="fas fa-user-tie"></i>
-                    <h3>Direito do Trabalho</h3>
-                    <p>Defesa dos direitos trabalhistas.</p>
+                    <i class="fas fa-clock"></i>
+                    <h3>Horas Extras e Benefícios</h3>
+                    <p>Assistência aos empregados na defesa de direitos relacionados à remuneração, como horas extras e benefícios.</p>
                 </div>
             </div>
         </div>
     </section>
+    
+   
+    <section id="servicos-empresas" class="areas-atuacao">
+        <div class="container">
+            <h2 style="color: var(--golden-text);">Serviços Trabalhistas para Empresas</h2>
+            <p style="text-align: center;">Soluções completas para garantir a conformidade legal e otimizar a gestão de recursos humanos.</p>
+            <div class="areas-grid">
+                <div class="area-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Consultoria Trabalhista</h3>
+                    <p>Orientação completa sobre legislação trabalhista, elaboração de contratos e políticas internas.</p>
+                </div>
+                <div class="area-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Negociação Coletiva</h3>
+                    <p>Representação em negociações sindicais e acordos coletivos de trabalho.</p>
+                </div>
+                <div class="area-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Defesa em Reclamações Trabalhistas</h3>
+                    <p>Representação em processos trabalhistas, minimizando riscos e custos para a empresa.</p>
+                </div>
+                <div class="area-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Auditoria Trabalhista</h3>
+                    <p>Análise da conformidade da empresa com a legislação trabalhista e identificação de riscos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="cadastro" class="lead-form">
+        <div class="container">
+            <h2 style="color: var(--golden-text); text-align: center;">Cadastre-se para saber mais</h2>
+            <form 
+                style="max-width: 600px; margin: 0 auto;" 
+                action="https://formsubmit.co/bpma97@gmail.com" 
+                method="POST"
+                id="cadastroForm"
+            >
+                <div style="margin-bottom: 1rem;">
+                    <label for="nome" style="display: block; font-weight: bold; margin-bottom: 0.5rem;">Nome:</label>
+                    <input 
+                        type="text" 
+                        id="nome" 
+                        name="nome" 
+                        required 
+                        placeholder="Digite seu nome completo" 
+                        style="width: 100%; padding: 0.5rem; border: 1px solid var(--dark-text); border-radius: 5px;">
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <label for="telefone" style="display: block; font-weight: bold; margin-bottom: 0.5rem;">Telefone:</label>
+                    <input 
+                        type="tel" 
+                        id="telefone" 
+                        name="telefone" 
+                        required 
+                        placeholder="(XX) XXXXX-XXXX" 
+                        pattern="\(\d{2}\) \d{4,5}-\d{4}" 
+                        style="width: 100%; padding: 0.5rem; border: 1px solid var(--dark-text); border-radius: 5px;">
+                </div>
+                <!-- Campo oculto para capturar a data automaticamente -->
+                <input type="hidden" id="data" name="data">
+                <input type="hidden" name="_next" value="/home/brunomelorv/Documentos/lpadv/ty.html"> <!-- Configuração de redirecionamento -->
+                <div style="text-align: center;">
+                    <button 
+                        type="submit" 
+                        style="background-color: var(--whatsapp-green); color: white; padding: 0.75rem 2rem; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; transition: background-color 0.3s;">
+                        Enviar e ir para o WhatsApp
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <script>
+        // JavaScript para preencher automaticamente a data no campo oculto
+        document.addEventListener('DOMContentLoaded', function () {
+            const dataInput = document.getElementById('data');
+            const hoje = new Date();
+            const dataFormatada = hoje.toISOString().split('T')[0]; // Formato: yyyy-mm-dd
+            dataInput.value = dataFormatada;
+        });
+    </script>
+    
 
+    
     <section id="localizacao" class="localizacao">
         <div class="container">
             <h2 style="color: var(--golden-text);">Nossa Localização</h2>
             <div class="mapa-container">
                 <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.514083338665!2d-50.56029!3d-17.47523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDQ3JzUyLjAiUyA1MMKwNTYnMDAuMCJX!5e0!3m2!1spt-BR!2sbr!4v1700419568546!5m2!1spt-BR!2sbr" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.514083338665!2d-50.934145!3d-17.797869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9361e9c7f5c8f5f5%3A0x1c3b9d5b9d5b9d5b!2sR.%20Joaquim%20Vaz%20do%20Nascimento%2C%20261%20-%20Centro%2C%20Rio%20Verde%20-%20GO%2C%2075901-140!5e0!3m2!1spt-BR!2sbr!4v1700419568546!5m2!1spt-BR!2sbr" 
                     width="600" 
                     height="450" 
                     style="border:0;" 
@@ -307,12 +402,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Shirley Melo Advocacia - Todos os direitos reservados</p>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
-            </div>
+            <p>&copy; 2025 Shirley Melo Advocacia - Todos os direitos reservados</p>
         </div>
     </footer>
 
